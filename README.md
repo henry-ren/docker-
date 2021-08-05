@@ -134,7 +134,7 @@ exit
 -----------------------------------------------------
 容器一般都与外界隔离。为此，容器与宿主机之间进行数据交互则需要使用docker技术。值得注意的是，容器与宿主机之间的数据交互都是要在宿主机上进行，为此，我们需要事先退出当前所在的容器。
 ```
-#复制本地文件到容器中
+# 复制本地文件到容器中
 # docker cp 本地文件 容器:容器目录 
 docker cp local_data tensor_ct:/root 
 
@@ -143,9 +143,21 @@ docker cp local_data tensor_ct:/root
 docker cp trnsor_ct:/root/container_data  /home/rqe/docker_test
 ```
 
-6.打包程序
+6.打包容器
 --------------------------------------------------------
-有时候，我们自己开发的软件需要被其他人所应用。为了减少代码环境配置的时间成本，我们可以将当前运行的容器进行打包，并输出镜像文件，传给使用者即可。
+**打包容器
+```
+# docker commit [CONTANINER ID] [IMAGE NAME:TAG]
+# docker commit的其他参数
+# -a :镜像作者名字；
+# -c :使用dockerfile指令来创建镜像；
+# -m :提交说明文字；
+# -p :暂停容器服务。
+```
+!(https://github.com/henry-ren/images/blob/main/%E6%89%93%E5%8C%85%E5%AE%B9%E5%99%A8.png)
+```
+docker commit 344d077602a2 torch_nlp:1.4-cuda10.1-py3
+```
 `没搞明白，先不写`
 
 7.其他命令
