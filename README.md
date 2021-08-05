@@ -91,6 +91,7 @@ docker image tag 76c152fbfd03 tf-cuda10.0-py3
 # docker run -itd –name [启动的容器名字] [镜像名：镜像TAG] /bin/bash
 docker run -itd --name tensor_ct tf-cuda10.0-py3 /bin/bash
 ```
+docker
 ```
 
 # 所有GPU
