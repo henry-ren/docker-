@@ -154,7 +154,7 @@ docker cp trnsor_ct:/root/container_data  /home/rqe/docker_test
 # -m :提交说明文字；
 # -p :暂停容器服务。
 ```
-!(https://github.com/henry-ren/images/blob/main/%E6%89%93%E5%8C%85%E5%AE%B9%E5%99%A8.png)
+![示例](https://github.com/henry-ren/images/blob/main/%E6%89%93%E5%8C%85%E5%AE%B9%E5%99%A8.png)
 ```
 docker commit 344d077602a2 torch_nlp:1.4-cuda10.1-py3
 ```
