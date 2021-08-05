@@ -91,7 +91,16 @@ docker image tag 76c152fbfd03 tf-cuda10.0-py3
 # docker run -itd –name [启动的容器名字] [镜像名：镜像TAG] /bin/bash
 docker run -itd --name tensor_ct tf-cuda10.0-py3 /bin/bash
 ```
-docker
+**docker使用GPU时时，需要额外执行下面的命令**
+```
+distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
+curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | sudo apt-key add -
+curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.list | sudo tee /etc/apt/sources.list.d/nvidia-docker.list
+
+sudo apt-get update && sudo apt-get install -y nvidia-container-toolkit
+sudo systemctl restart docker
+
+```
 ```
 
 # 所有GPU
