@@ -145,7 +145,7 @@ docker cp trnsor_ct:/root/container_data  /home/rqe/docker_test
 
 6.打包容器
 --------------------------------------------------------
-**打包容器
+**打包容器**
 ```
 # docker commit [CONTANINER ID] [IMAGE NAME:TAG]
 # docker commit的其他参数
@@ -158,7 +158,14 @@ docker cp trnsor_ct:/root/container_data  /home/rqe/docker_test
 ```
 docker commit 20a4b7fa03e7 tf-cuda10.0-py3:latest
 ```
-`没搞明白，先不写`
+**打包镜像**
+```
+docker  save  -o tf-cuda10.0-py3.tar  tf-cuda10.0-py3 # 当前路径下会生成一个tf-cuda10.0-py3.tar
+```
+**生成镜像**
+```
+docker  load  <  tf-cuda10.0-py3.tar     # 生成的镜像跟之前打包的镜像名称一样
+```
 
 7.其他命令
 --------------------------------------------------------
