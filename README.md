@@ -4,7 +4,7 @@ docker使用
 1.安装docker
 ------------------------------
 ```
-sudo apt-get remove docker docker-engine docker.io  `卸载旧版本`
+sudo apt-get remove docker docker-engine docker.io  *卸载旧版本*
 # 添加传输软件包与CA证书
 sudo apt-get update
 sudo apt-get install  apt-transport-https  ca-certificates  curl  \
