@@ -156,7 +156,7 @@ docker cp trnsor_ct:/root/container_data  /home/rqe/docker_test
 ```
 ![示例](https://github.com/henry-ren/images/blob/main/%E6%89%93%E5%8C%85%E5%AE%B9%E5%99%A8.png)
 ```
-docker commit 344d077602a2 torch_nlp:1.4-cuda10.1-py3
+docker commit 20a4b7fa03e7 tf-cuda10.0-py3:latest
 ```
 `没搞明白，先不写`
 
