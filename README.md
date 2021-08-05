@@ -12,11 +12,13 @@ gnupg-agent software-properties-common
 # 添加docker国内源，加速下载
 curl -fsSL https://mirrors.aliyun.com/docker-ce/linux/ubuntu/gpg | sudo apt-key add -
 ```
-```
-如果出现  `curl: (77) error setting certificate verify locations`
 
-`export CURL_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt`
 ```
+如果出现  curl: (77) error setting certificate verify locations
+
+export CURL_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
+```
+
 ```
 # sources.list中添加docker软件源
 sudo add-apt-repository \
