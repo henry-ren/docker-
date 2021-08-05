@@ -1,7 +1,7 @@
 docker使用
 ==============================
 
-## 1.安装docker
+1.安装docker
 ------------------------------
 ```
 sudo apt-get remove docker docker-engine docker.io  # 卸载旧版本
