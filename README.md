@@ -117,7 +117,7 @@ docker ps -a  # 查看所有容器，包含停止的容器
 **指定挂载宿主机的目录**
 ```
 #通过-v参数，冒号前为宿主机目录，必须为绝对路径，冒号后为镜像内挂载的路径，必须为镜像内有的地址
-docker run -itd -v /home/dock/Downloads:/usr/Downloads--name tensor_ct tf-cuda10.0-py3 /bin/bash
+docker run -itd -v /home/dock/Downloads:/usr/Downloads --name tensor_ct tf-cuda10.0-py3 /bin/bash
 ```
 
 ```
